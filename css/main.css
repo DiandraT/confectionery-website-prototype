@@ -1,0 +1,118 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/** HEADER **/
+
+.wrapper {
+  background-color: #ADADAD;
+}
+
+.img-flex {
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+
+  left: 50%; /* Pushes it 50% left and -50% right*/
+  transform: translateX(-50%);
+}
+
+/** STYLING THE NAVIGATION **/
+
+header {
+  padding: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+header li { /** To prevent line breaks in the li lists **/
+  list-style-type: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ul {
+  padding: 0;
+}
+
+/** Styling dropdown menu **/
+
+.material-icons { /* This is the dropdown button */
+  margin-top: .75rem;
+  margin-right: .75rem;
+  background-color: #686767;
+  color: #fff;
+
+  border: 1px solid;
+  border-radius: 10%; /* Curving/rounding the sides to a square */
+}
+
+.dropdown { /* Positioning the dropdown content */
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-content { /* Hiding the dropdown content and styling it when it appears */
+  display: none;
+  position: absolute;
+  background:rgba(255,255,255, 0.9); /* Giving the white background to the links an opacity*/
+  text-align: center;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-content a { /* Styling the links within the dropdown menu */
+  color: #000;
+  display: block;
+  padding: 12px 16px;
+}
+
+.dropdown-content a:hover { /* Changing the dropdown links background when clicked */
+  display: block;
+  background-color: #686767;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content { /* Showing the dropdown menu when icon is clicked */
+  display: block;
+}
+
+.dropdown:hover .material-icons { /* Changing the colour of the icon once clicked */
+  background-color: #f2f2f2;
+  color: #686767;
+  cursor: pointer;
+}
