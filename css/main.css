@@ -32,13 +32,13 @@ body {
 .logo {
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 2.5rem;
-  color: #000;
+  color: #fff;
   position: absolute;
   z-index: 10; /* prioritizes the element, so it sits infront */
   white-space: nowrap;
   margin-top: 5rem;
 
-  background: rgba(204, 204, 204, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-left: 1rem;
@@ -422,7 +422,6 @@ small {
 
 }
 
-
 @media only screen and (min-width: 38em) {
 
   html {
@@ -431,11 +430,12 @@ small {
   }
 
   .logo {
+    color: #000;
     background: none;
     position: relative;
-    display: inline-block;
-    margin-top: 3rem;
-    margin-bottom: 0;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
     text-align: center;
   }
 
@@ -459,9 +459,113 @@ small {
     display: inline-block;
   }
 
-.card {
-  width: 165px;
-}
+  .intro p {
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .card {
+    width: 165px;
+    margin-top: -1rem;
+  }
+
+  .section-two {
+    margin-top: 4rem;
+  }
+
+  .ex-body {
+    padding-right: 6rem;
+  }
+
+  .special-content {
+    padding: 0;
+  }
+
+  .special-title {
+    position: absolute;
+    margin-top: -12rem;
+    margin-left: 0;
+    background-color: rgba(0,0,0,0.4);
+    padding: .5rem;
+  }
+
+  .special-body {
+    position: absolute;
+    margin-top: -8rem;
+    margin-left: 0;
+    background-color: rgba(0,0,0,0.4);
+    padding: .5rem;
+    padding-right: 5rem;
+  }
+
+  .read-more {
+    position: absolute;
+    margin-top: -3rem;
+    margin-left: .5rem;
+    color: #fff;
+  }
+
+  .add-img,
+  .del-img {
+    width: 49%;
+    display: block;
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+  }
+
+  .del-img {
+    float: right;
+  }
+
+  .add-img {
+    float: left;
+  }
+
+  .add-content,
+  .del-content {
+    padding: 0;
+  }
+
+  .del-title {
+    position: absolute;
+    margin-right: 5rem;
+
+    background-color: rgba(0,0,0,0.4);
+    padding: .5rem;
+  }
+
+  .add-title {
+    position: absolute;
+    color: #fff;
+    margin-top: 6rem;
+
+    background-color: rgba(0,0,0,0.4);
+    padding: .5rem;
+  }
+
+  .add-body,
+  .del-body {
+    display: none;
+  }
+
+  .part-title {
+    position: absolute;
+    margin-top: -12rem;
+    margin-left: 0;
+    background-color: rgba(0,0,0,0.4);
+    padding: .5rem;
+  }
+
+  .part-body {
+    position: absolute;
+    margin-top: -8rem;
+    margin-left: 0;
+    background-color: rgba(0,0,0,0.4);
+    padding: .5rem;
+    padding-right: 5rem;
+  }
+
 
 }
 
@@ -472,8 +576,62 @@ small {
     line-height: 1.5;
   }
 
+  .background-img {
+    width: 100%;
+  }
+
+  .logo {
+    margin-top: 1.5rem;
+    margin-bottom: -2rem;
+    display: block;
+  }
+
+  .dropdown {
+    margin-bottom: 0rem;
+  }
+
+  .intro {
+    position: absolute;
+    margin: auto;
+    margin-top: 3rem;
+    left: 0;
+    right: 0;
+    top: 20em;
+    color: #fff;
+    border: none;
+
+    background-color: rgba(0,0,0,0.4)
+  }
+
+  .intro p{
+    text-align: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .special-content {
+    position: relative;
+  }
+
+  .card {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+  }
+
+
 }
 
 @media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+    .logo {
+      display: inline-block;
+    }
+  }
 
 }
