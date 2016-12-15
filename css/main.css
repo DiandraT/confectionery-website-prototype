@@ -38,7 +38,7 @@ body {
   white-space: nowrap;
   margin-top: 5rem;
 
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .5);
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-left: 1rem;
@@ -52,6 +52,10 @@ body {
 
 header nav a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 header li { /** To prevent line breaks in the li lists **/
@@ -116,7 +120,7 @@ ul {
   background-color: #f2f2f2;
   color: #686767;
   cursor: pointer;
-  }
+}
 
 /** SECTION ONE **/
 
@@ -130,7 +134,7 @@ ul {
 
 .intro-title {
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 .intro-paragraph,
@@ -141,10 +145,6 @@ ul {
 }
 
 /** ICON CARDS **/
-
-li {
-  list-style-type: none;
-}
 
 .card {
   text-align: center;
@@ -157,7 +157,7 @@ li {
 }
 
 .card-title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
 }
 
@@ -175,8 +175,8 @@ li {
   margin-bottom: 3.5rem;
 }
 
-.card-readmore{
-  font-family: 'Open Sans Condensed', sans-serif;
+.card-readmore {
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   color: #333;
   text-decoration: none;
@@ -189,7 +189,7 @@ li {
 }
 
 .ex-title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   text-align: left;
 }
 
@@ -239,7 +239,7 @@ li {
 }
 
 .special-title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   color: #fff;
   margin-left: 2rem;
@@ -257,11 +257,11 @@ li {
 
 .add-img {
   width: 100%;
-  filter: opacity(0.9);
+  filter: opacity(.9);
 }
 
 .add-title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   color: #fff;
   margin-left: 2rem;
@@ -282,7 +282,7 @@ li {
 }
 
 .del-title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   color: #fff;
   margin-left: 2rem;
@@ -304,7 +304,7 @@ li {
 }
 
 .part-title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   color: #fff;
   margin-left: 2rem;
@@ -320,7 +320,7 @@ li {
 .add-readmore,
 .del-readmore,
 .part-readmore {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   color: #fff;
   text-decoration: none;
   margin-left: 2rem;
@@ -340,14 +340,14 @@ article:hover {
   cursor: pointer;
 }
 
-.link-card:link{
+.link-card:link {
   text-decoration: none;
   cursor: pointer;
   color: #fff;
 }
 
 .info-title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   color: #000;
   white-space: nowrap;
   margin-left: 2rem;
@@ -467,7 +467,7 @@ small {
     margin-bottom: 0;
   }
 
-  .dropdown ul li{
+  .dropdown ul li {
     display: inline-block;
   }
 
@@ -504,7 +504,7 @@ small {
     top: 45%;
     position: absolute;
     margin-left: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, .7);
     padding: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -515,7 +515,7 @@ small {
     top: 62%;
     position: absolute;
     margin-left: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, .7);
     padding: .5rem;
     text-align: left;
     width: 80%;
@@ -523,12 +523,11 @@ small {
 
   .special-readmore,
   .part-readmore {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     text-decoration: none;
-
 
     top: 85%;
     margin-left: 0;
@@ -568,7 +567,7 @@ small {
     width: 75%;
     margin: 0;
     text-align: center;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, .7);
   }
 
   .add-body,
@@ -584,9 +583,9 @@ small {
 
   .add-readmore,
   .del-readmore {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     text-decoration: none;
     text-align: center;
@@ -618,7 +617,7 @@ small {
   }
 
   .dropdown {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 
   .intro {
@@ -631,10 +630,10 @@ small {
     color: #fff;
     border: none;
 
-    background-color: rgba(0,0,0,0.4)
+    background-color: rgba(0, 0, 0, .4);
   }
 
-  .intro p{
+  .intro p {
     text-align: center;
     padding-left: 13rem;
     padding-right: 13rem;
@@ -652,7 +651,7 @@ small {
 
   .left,
   .right {
-    width: 45%
+    width: 45%;
   }
 
   .special-content,
@@ -663,7 +662,7 @@ small {
     width: 45%;
     text-align: center;
     margin: 0 auto;
-}
+  }
 
   .special-title,
   .part-title {
@@ -676,7 +675,7 @@ small {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     transform: translate(-50%, -50%);
-}
+  }
 
   .special-readmore,
   .part-readmore {
@@ -701,7 +700,7 @@ small {
 
   .add-img,
   .del-img {
-    padding: 0px;
+    padding: 0;
   }
 
   .article-hover {
@@ -723,7 +722,7 @@ small {
     line-height: 1.5;
   }
 
-    .logo {
+  .logo {
     font-size: 2.5rem;
     display: inline-block;
     float: left;
@@ -731,45 +730,45 @@ small {
     padding-top: .5rem;
 
     left: 0;
-    transform:translateX(0);
-    }
+    transform: translateX(0);
+  }
 
-    .dropdown-content {
-      padding-top: .5rem;
-    }
+  .dropdown-content {
+    padding-top: .5rem;
+  }
 
-    .intro {
-      font-size: 1.5rem;
-      top: 350px;
-    }
+  .intro {
+    font-size: 1.5rem;
+    top: 350px;
+  }
 
-    .card {
-      margin-left: 3rem;
-      width: 20%;
-    }
+  .card {
+    margin-left: 3rem;
+    width: 20%;
+  }
 
-    .borderline {
-      width: 75%;
-    }
+  .borderline {
+    width: 75%;
+  }
 
-    .ex-content {
-      text-align: center;
-      padding-left: 7rem;
-      padding-right: 6rem;
-    }
+  .ex-content {
+    text-align: center;
+    padding-left: 7rem;
+    padding-right: 6rem;
+  }
 
-    .ex-title {
-      text-align: center;
-    }
+  .ex-title {
+    text-align: center;
+  }
 
-    .button {
-      margin: 0 auto;
-      margin-bottom: 5%;
-    }
+  .button {
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
 
-    .special-title,
-    .part-title {
-      padding-left: 6.5rem;
-      padding-right: 6.5rem;
-    }
+  .special-title,
+  .part-title {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
 }
