@@ -427,7 +427,7 @@ small {
   }
 
   .borderline {
-    width: 18rem;
+    margin: 0 auto;
   }
 
 }
@@ -485,10 +485,6 @@ small {
     margin-top: 4rem;
   }
 
-  .borderline {
-    margin-left: 8rem;
-  }
-
   .section-three {
     display: inline-block;
     margin: 0 auto;
@@ -502,7 +498,7 @@ small {
   .special-title {
     position: absolute;
     margin-top: -12rem;
-    margin-left: .5rem;
+    margin-left: 0;
     background-color: rgba(0,0,0,0.7);
     padding: .5rem;
     padding-left: 1rem;
@@ -512,15 +508,17 @@ small {
   .special-body {
     position: absolute;
     margin-top: -8rem;
-    margin-left: .5rem;
+    margin-left: 0;
     background-color: rgba(0,0,0,0.7);
     padding: .5rem;
+    text-align: left;
+    width: 80%;
   }
 
   .part-title {
     position: absolute;
     margin-top: -12rem;
-    margin-left: .5rem;
+    margin-left: 0;
     background-color: rgba(0,0,0,0.7);
     padding: .5rem;
     padding-left: 1rem;
@@ -530,10 +528,11 @@ small {
   .part-body {
     position: absolute;
     margin-top: -8rem;
-    margin-left: .5rem;
+    margin-left: 0;
     background-color: rgba(0,0,0,0.7);
     padding: .5rem;
     width: 80%;
+    text-align: left;
   }
 
   .special-readmore,
@@ -544,8 +543,11 @@ small {
     color: #fff;
     position: absolute;
     margin-top: -3.75rem;
-    margin-left: .5rem;
     padding: .5rem;
+    margin-left: 0;
+
+    left: 0;
+    transform: translate(0);
   }
 
   .add-img {
@@ -608,6 +610,11 @@ small {
     padding: .5rem;
   }
 
+  .borderline {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -657,6 +664,38 @@ small {
     display: inline-block;
     width: 45%;
 }
+
+  .special-title{
+    position: absolute;
+    left: 27%;
+    color: #fff;
+
+    transform: translate(-50%, -50%);
+    width: 30%;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .special-readmore{
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: .5rem;
+  }
+
+  .part-title {
+    left: 50%;
+  }
+
+  .part-readmore {
+    display: block;
+    left: 50%;
+  }
+
   .special-body,
   .part-body {
     display: none;
@@ -671,6 +710,8 @@ small {
   .del-img {
     padding: 0px;
   }
+
+
 
 @media only screen and (min-width: 90em) {
 
