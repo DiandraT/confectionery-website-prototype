@@ -226,6 +226,7 @@ li {
 
 .section-three {
   background-color: #333;
+
 }
 
 .special-content {
@@ -328,6 +329,7 @@ li {
 /** LINK CARD **/
 
 article {
+  margin-top: 2rem;
   padding: .25rem;
   padding-bottom: 1rem;
   background-color: #e4e4e4;
@@ -491,33 +493,16 @@ small {
     text-align: center;
   }
 
-  .special-content {
+  .special-content,
+  .part-content {
     padding: 0;
+    position: relative;
   }
 
-  .special-title {
-    position: absolute;
-    margin-top: -12rem;
-    margin-left: 0;
-    background-color: rgba(0,0,0,0.7);
-    padding: .5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .special-body {
-    position: absolute;
-    margin-top: -8rem;
-    margin-left: 0;
-    background-color: rgba(0,0,0,0.7);
-    padding: .5rem;
-    text-align: left;
-    width: 80%;
-  }
-
+  .special-title,
   .part-title {
+    top: 45%;
     position: absolute;
-    margin-top: -12rem;
     margin-left: 0;
     background-color: rgba(0,0,0,0.7);
     padding: .5rem;
@@ -525,29 +510,31 @@ small {
     padding-right: 1rem;
   }
 
+  .special-body,
   .part-body {
+    top: 62%;
     position: absolute;
-    margin-top: -8rem;
     margin-left: 0;
     background-color: rgba(0,0,0,0.7);
     padding: .5rem;
-    width: 80%;
     text-align: left;
+    width: 80%;
   }
 
   .special-readmore,
   .part-readmore {
     font-family: 'Open Sans Condensed', sans-serif;
-    background-color: rgba(0,0,0,0.7);
-    text-decoration: none;
     color: #fff;
+    background-color: rgba(0,0,0,0.7);
     position: absolute;
-    margin-top: -3.75rem;
-    padding: .5rem;
-    margin-left: 0;
+    text-decoration: none;
 
+
+    top: 85%;
+    margin-left: 0;
     left: 0;
     transform: translate(0);
+    padding: .5rem;
   }
 
   .add-img {
@@ -560,7 +547,7 @@ small {
   .left,
   .right {
     display: inline-block;
-    width: 45%;
+    width: 49%;
     text-align: center;
     margin: 0 auto;
   }
@@ -605,7 +592,7 @@ small {
     text-align: center;
 
     left: 40%;
-    bottom: 15%;
+    top: 65%;
     transform: translate(-50%, -50%);
     padding: .5rem;
   }
@@ -649,8 +636,8 @@ small {
 
   .intro p{
     text-align: center;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .card {
@@ -659,41 +646,52 @@ small {
     margin-top: 3rem;
   }
 
-  .special-content,
-  .part-content {
-    display: inline-block;
-    width: 45%;
-}
-
-  .special-title{
-    position: absolute;
-    left: 27%;
-    color: #fff;
-
-    transform: translate(-50%, -50%);
-    width: 30%;
-    margin: 0;
-    text-align: center;
-    background-color: rgba(0,0,0,0.7);
+  .section-three {
+    padding-bottom: 2rem;
   }
 
-  .special-readmore{
-    position: absolute;
-    text-decoration: none;
-    text-align: center;
+  .left,
+  .right {
+    width: 45%
+  }
 
-    left: 40%;
+  .special-content,
+  .part-content {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+  .special-title,
+  .part-title {
+    position: absolute;
+    left: 50%;
+    top: 43.5%;
+
+    white-space: nowrap;
+    padding: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    transform: translate(-50%, -50%);
+}
+
+  .special-readmore,
+  .part-readmore {
+    left: 43%;
+    top: 68%;
     transform: translate(-50%, -50%);
     padding: .5rem;
   }
 
   .part-title {
-    left: 50%;
+    top: 35%;
   }
 
   .part-readmore {
-    display: block;
-    left: 50%;
+    top: 63%;
   }
 
   .special-body,
@@ -701,17 +699,22 @@ small {
     display: none;
   }
 
-  .left,
-  .right {
-    float: none;
-  }
-
   .add-img,
   .del-img {
     padding: 0px;
   }
 
+  .article-hover {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .info {
+    text-align: center;
+  }
+
+}
 
 @media only screen and (min-width: 90em) {
 
@@ -764,4 +767,9 @@ small {
       margin-bottom: 5%;
     }
 
+    .special-title,
+    .part-title {
+      padding-left: 6.5rem;
+      padding-right: 6.5rem;
+    }
 }
