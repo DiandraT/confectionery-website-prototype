@@ -336,7 +336,6 @@ ul {
   color: #fff;
 }
 
-
 /** LINK CARD **/
 
 article {
@@ -684,7 +683,7 @@ small {
   .card-img {
     width: 35%;
   }
-  
+
   .ex-title {
     text-align: center;
   }
