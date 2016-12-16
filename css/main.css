@@ -319,6 +319,13 @@ ul {
   margin-left: 2rem;
 }
 
+.special-body,
+.add-body,
+.del-body,
+.part-body {
+  margin-right: 3rem;
+}
+
 .special-readmore,
 .add-readmore,
 .del-readmore,
@@ -528,13 +535,13 @@ small {
 
   .special-body,
   .part-body {
-    top: 56%;
+    top: 55%;
     position: absolute;
     margin-left: 0;
     background-color: rgba(0, 0, 0, .7);
     padding: .5rem;
     text-align: left;
-    width: 55%;
+    width: 60%;
   }
 
   .special-readmore,
@@ -712,24 +719,26 @@ small {
     margin: 0 auto;
   }
 
-  .special-title {
+  .special-title,
+  .part-title {
     position: absolute;
     left: 50%;
     top: 43.5%;
 
     white-space: nowrap;
     padding: 0;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     transform: translate(-50%, -50%);
   }
 
   .part-title {
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 43.5%;
 
     padding: 0;
+    margin: 0;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     transform: translate(-50%, -50%);
