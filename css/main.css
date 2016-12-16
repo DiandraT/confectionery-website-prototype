@@ -204,27 +204,6 @@ ul {
   margin-left: 2rem;
 }
 
-/* Section Three Button */
-
-.button {
-  margin-top: 2rem;
-  margin-bottom: 2.75rem;
-}
-
-.btn-ghost {
-  text-decoration: none;
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #333;
-  padding: .5rem;
-}
-
-.btn-ghost:hover {
-  background-color: #666;
-  border: 2px solid #e2e2e2;
-  color: #fff;
-}
-
 /** SECTION THREE **/
 
 .section-three {
@@ -335,6 +314,28 @@ ul {
   text-decoration: none;
   margin-left: 2rem;
 }
+
+/* Section Three Button */
+
+.button {
+  margin-top: 2rem;
+  margin-bottom: 2.75rem;
+}
+
+.btn-ghost {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #333;
+  padding: .5rem;
+}
+
+.btn-ghost:hover {
+  background-color: #666;
+  border: 2px solid #e2e2e2;
+  color: #fff;
+}
+
 
 /** LINK CARD **/
 
@@ -559,17 +560,23 @@ small {
     padding: .5rem;
   }
 
-  .add-img {
-    display: block;
-    padding: .75rem;
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .left,
   .right {
     display: inline-block;
     width: 49%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .add-content,
+  .del-content {
+    position: relative;
+    padding: 0;
+  }
+
+  .add-img {
+    display: block;
+    padding: .75rem;
     text-align: center;
     margin: 0 auto;
   }
@@ -596,12 +603,6 @@ small {
   .add-body,
   .del-body {
     display: none;
-  }
-
-  .add-content,
-  .del-content {
-    position: relative;
-    padding: 0;
   }
 
   .add-readmore,
@@ -683,7 +684,7 @@ small {
   .card-img {
     width: 35%;
   }
-
+  
   .ex-title {
     text-align: center;
   }
@@ -697,16 +698,6 @@ small {
 
   .section-three {
     padding-bottom: 2rem;
-  }
-
-  .left,
-  .right {
-    width: 45%;
-  }
-
-  .add-img,
-  .del-img {
-    padding: 0;
   }
 
   .special-content,
@@ -733,15 +724,12 @@ small {
   }
 
   .part-title {
-    position: absolute;
-    left: 50%;
-    top: 43.5%;
-
-    padding: 0;
     margin: 0;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    transform: translate(-50%, -50%);
+  }
+
+  .special-body,
+  .part-body {
+    display: none;
   }
 
   .special-readmore {
@@ -758,9 +746,14 @@ small {
     padding: .5rem;
   }
 
-  .special-body,
-  .part-body {
-    display: none;
+  .left,
+  .right {
+    width: 45%;
+  }
+
+  .add-img,
+  .del-img {
+    padding: 0;
   }
 
   .article-hover {
